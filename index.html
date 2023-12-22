@@ -1,79 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YACHTJET</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
- 
+<header class="page-header">
+  <div class="container-header">
+      <a href="" class="navbar-brand">yachtjet</a>
   <nav class="navbar">
-    <div class="container">
-        <a href="#" class="navbar-brend">yachtjet</a>
-        <ul class="navbar-menu-header">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Yachts</a></li>
-            <li><a href="#">Reviews</a></li>
-        </ul>
-
-    </div>
+      <div class="navbar-box">
+         
+          <ul class="navbar-menu">
+              <li class="navbar-menu-btn-about"><a href="#" width="91" height="40">About</a></li>
+              <li class="navbar-menu-btn"><a href="#" width="91" height="40">Yachts</a></li>
+              <li class="navbar-menu-btn"><a href="#" width="91" height="40">Reviews</a></li>
+          </ul>
+      </div>
   </nav>
-
-
-  <body>
-    <load src="partials/header.html" />
-    <main>
-      <div class="background-picture">
-        <load src="partials/hero.html" />
-        <load src="partials/about-us.html" />
-      </div>
-      <load src="partials/our-yachts.html" />
-      <load src="partials/advantages.html" />
-      <load src="partials/rent-a-yacht.html" />
-      <load src="partials/reviews.html" />
-      <div>
-        <picture>
-          <source
-            srcset="
-              ./src/img/about_us/about-us-mobil.jpg   1x,
-              ./src/img/about_us/about-us-mobil@2.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <img
-            src="./src/img/about_us/about-us-mobil.jpg"
-            alt="laptop and phone"
-            width="335"
-          />
-        </picture>
-      </div>
-    </main>
-    <load src="partials/footer.html" />
-    <load src="partials/mobil-menu.html" />
-
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script type="module" src="/main.js"></script>
-  </body>
-</html>
+  <ul class="social-list">
+      <li class="social-list-header">
+          <a href="https://www.instagram.com/goitclub/" class="social-list-link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="instagram-icon">
+                  <use href="../img/icons.svg#icon-instagram"></use>
+              </svg>
+          </a>
+      </li>
+      <li class="social-list-header">
+          <a href="https://www.youtube.com/c/GoIT" class="social-list-link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="youtube-icon">
+                  <use href="../img/icons.svg#icon-youtube"></use>
+              </svg>
+          </a>
+      </li>
+      <li class="social-list-header">
+          <a href="https://www.facebook.com/goITclub/" class="social-list-link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="facebook-icon">
+                  <use href="../img/icons.svg#icon-facebook"></use>
+              </svg>
+          </a>
+      </li>
+  </ul>
+  <button class="mobile-menu-open-btn-header" type="button">
+      <svg class="mobile-menu-open-btn-icon-header" width="28" height="28" aria-label="mobile menu opem icon" >
+          <use href="../img/icons.svg#icon-burger-header-mobil"></use>
+      </svg>
+  </button>
+  </div>
+  </header>
